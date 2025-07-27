@@ -1,0 +1,70 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #aed5fc;
+  color: #000000;
+  font-family: sans-serif;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* viewport-height, ocupa 100% da altura da janela */
+}
+
+h2 {
+    background-color:  #00bcd4;
+    outline: 2px solid;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+input {
+  background-color: #00bcd4;
+  border: 2px solid #008192;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 16px;
+}
+
+input::placeholder {
+  color: #244f8798;
+}
+
+
+button {
+  background: rgb(41, 183, 231);
+  border: 2px solid rgba(0, 90, 120, 0.8);
+  border-radius: 12px;
+  color: black;
+  font-weight: bold;
+  padding: 10px 16px;
+  backdrop-filter:  6px; 
+  box-shadow: 0 4px 12px rgba(0, 153, 204, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background:  #00bcd4;
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.7);
+  transform: scale(1.04);
+}
+
+.cadastradas {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin-left: -120px;
+  
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #00bcd4; /* muda a cor da caixinha preenchida */
+  cursor: pointer;
+  vertical-align: middle;
+}
+
