@@ -5,12 +5,12 @@ $('document').ready(function(){
         e.preventDefault();
         const novaTarefa = $('.input-tarefa');
         const input = `<label style="display: none"></label>`
-         dfkgjnd afgjn
-         fsdfghs
-         hfgs
-         hfgsdhh
-         FragmentDirectivehfg
-         debuggerf
+        //  dfkgjnd afgjn
+        //  fsdfghs
+        //  hfgs
+        //  hfgsdhh
+        //  FragmentDirectivehfg
+        //  debuggerf
         $()
     })
 });
