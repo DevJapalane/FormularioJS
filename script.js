@@ -1,11 +1,14 @@
-$('document').ready(function(){
-
-
-    $('.form').on('submit', function(e){
+$(document).ready(function() {
+    $('#form').submit(function(e) {
         e.preventDefault();
-        const novaTarefa = $('.input-tarefa');
-        const input = `<label style="display: none"></label>`
-        
-        $()
-    })
+        var novaTarefa = $('#input-tarefa').val().trim();
+        if (novaTarefa !== "") {
+            $('#lista-tarefa').append('<li>' + novaTarefa + '</li>');
+            $('#input-tarefa').val("");
+        }
+    });
+
+    $('#lista-tarefa').on('click', 'li', function() {
+        $(this).toggleClass('done');
+    });
 });

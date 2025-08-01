@@ -9,18 +9,15 @@
 <body>
     <div class="container">
         <h2>Lista de Tarefas</h2>
-        <div class="form">
-            <form>
+            <form id="form">
                 <input id="input-tarefa" type="text" placeholder="Insira tarefa" required>
                 <button type="submit">+</button>
             </form>
-        </div>    
-        <!-- <h2>Tarefas Cadastradas</h2> -->
-        <div class="cadastradas">
-            <label><input type="checkbox"> dormir</label>
-            <label><input type="checkbox"> nanar</label>
-        </div>
-    </div>
+            <!-- Tarefas -->
+            <ul id="lista-tarefa">
+                <li></li>
+            </ul>
+    </div>  
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./script.js"></script>
 </body>

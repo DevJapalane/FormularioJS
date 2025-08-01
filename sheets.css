@@ -6,6 +6,15 @@ body, html {
   font-family: sans-serif;
 }
 
+#lista-tarefa {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  cursor: pointer;
+  margin-left: -40px;
+}
 
 .container {
   display: flex;
@@ -28,6 +37,7 @@ input {
   border-radius: 20px;
   text-align: center;
   padding: 10px 16px;
+  margin-left: 44px;
 }
 
 input::placeholder {
@@ -52,14 +62,6 @@ button:hover {
   transform: scale(1.04);
 }
 
-.cadastradas {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  margin-left: -120px;
-  
-}
-
 input[type="checkbox"] {
   width: 15px;
   height: 15px;
@@ -68,3 +70,7 @@ input[type="checkbox"] {
   vertical-align: middle;
 }
 
+
+.done {
+  text-decoration: line-through;
+}
